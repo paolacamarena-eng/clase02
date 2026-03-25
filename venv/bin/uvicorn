@@ -1,5 +1,5 @@
 #!/bin/sh
-'''exec' "/Users/paolacamarena/Desktop/CURSO VIBE CODING/CLASE 2/venv/bin/python3" "$0" "$@"
+'''exec' "/Users/paolacamarena/Desktop/CURSO VIBE CODING/CLASE 2/venv/bin/python3.12" "$0" "$@"
 ' '''
 # -*- coding: utf-8 -*-
 import re
