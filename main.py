@@ -4,6 +4,21 @@ from routes.servicios import router as servicios_router
 from routes.auth import router as auth_router
 
 app = FastAPI()
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+from routes.servicios import router as servicios_router
+from routes.auth import router as auth_router
+
+app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 
 # Incluir los routers
 app.include_router(servicios_router)
